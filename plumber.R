@@ -17,3 +17,7 @@ library(plumber)
 function(msg = "") {
     list(msg = paste0("The message is: '", msg, "'"))
 }
+
+
+widelong <- plumber::plumb('test_api/plumber.R')
+widelong$run()
